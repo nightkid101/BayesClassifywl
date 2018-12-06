@@ -1,10 +1,12 @@
 import java.io.IOException;
 import java.net.URI;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
+import org.apache.hadoop.io.IOUtils;
 import org.apache.hadoop.io.SequenceFile;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
@@ -24,7 +26,7 @@ import org.apache.hadoop.util.ReflectionUtils;
  * args[1]输出,处理测试集得到得到正确情况下每个类有哪些文档
  * args[2]输入,经贝叶斯分类的结果
  * args[3]输出,经贝叶斯分类每个类有哪些文档
- * [args[4]输出,计算所得的评估值(可以不用写入文件，直接显示在终端)]
+ * 屏幕输出评估值
  */
 
 
@@ -34,7 +36,7 @@ public class Evaluation {
 		Configuration conf = new Configuration();
 		String[] otherArgs = new GenericOptionsParser(conf, args).getRemainingArgs();
 		if (otherArgs.length != 4) {
-			System.err.println("Usage: NaiveBayesClassification!");
+			System.err.println("error: Invalid Arguments!");
 			System.exit(4);
 		}
 		FileSystem hdfs = FileSystem.get(conf);
@@ -42,12 +44,13 @@ public class Evaluation {
 		Path path1 = new Path(otherArgs[1]);
 		if(hdfs.exists(path1))
 			hdfs.delete(path1, true);
-		Job job1 = new Job(conf, "Original");
+		Job job1 = new Job(conf, "测试集处理 ");
 		job1.setJarByClass(Evaluation.class);
 		job1.setInputFormatClass(SequenceFileInputFormat.class);
 		job1.setOutputFormatClass(SequenceFileOutputFormat.class);
-		job1.setMapperClass(RightDocClassMap.class);
-		//job1.setCombinerClass(Reduce.class);
+		job1.setMapperClass(OriginalClassMap.class);
+        job1.setMapOutputKeyClass(Text.class);//map阶段的输出的key
+        job1.setMapOutputValueClass(Text.class);//map阶段的输出的value
 		job1.setReducerClass(Reduce.class);
 		job1.setOutputKeyClass(Text.class);
 		job1.setOutputValueClass(Text.class);
@@ -61,13 +64,13 @@ public class Evaluation {
 		Path path2 = new Path(otherArgs[3]);
 		if(hdfs.exists(path2))
 			hdfs.delete(path2, true);
-		Job job2 = new Job(conf, "Classified");
+		Job job2 = new Job(conf, "预测结果处理");
 		job2.setJarByClass(Evaluation.class);
-//		job2.setInputFormatClass(KeyValueTextInputFormat.class);
 		job2.setInputFormatClass(SequenceFileInputFormat.class);
 		job2.setOutputFormatClass(SequenceFileOutputFormat.class);
-		job2.setMapperClass(ClassifiedDocOfClassMap.class);
-		//job2.setCombinerClass(Reduce.class);
+		job2.setMapperClass(ClassifiedClassMap.class);
+        job2.setMapOutputKeyClass(Text.class);//map阶段的输出的key
+        job2.setMapOutputValueClass(Text.class);//map阶段的输出的value
 		job2.setReducerClass(Reduce.class);
 		job2.setOutputKeyClass(Text.class);
 		job2.setOutputValueClass(Text.class);
@@ -80,7 +83,7 @@ public class Evaluation {
 
 		ctrljob2.addDependingJob(ctrljob1);
 
-		JobControl jobCtrl = new JobControl("NaiveBayes");
+		JobControl jobCtrl = new JobControl("评估分类效果");
 		//添加到总的JobControl里，进行控制
 		jobCtrl.addJob(ctrljob1);
 		jobCtrl.addJob(ctrljob2);
@@ -96,55 +99,78 @@ public class Evaluation {
 			}
 		}
 
-		GetEvaluation(conf, otherArgs[3]+"/part-r-00000", otherArgs[1]+"/part-r-00000");
+		ClassifiedResultsManage(conf, otherArgs[3]+"/part-r-00000");
+		GetEvaluation(conf,otherArgs[1]+"/part-r-00000");
 	}
 
 	/**
-	 *  得到正确的文档分类
-	 * 输入:初始数据集合,格式为<<ClassName:Doc>,word1 word2...>
-	 * 输出:原本的文档分类，即<ClassName,Doc>
+	 * 得到正确的文档分类
+	 * 输入:初始数据集合,格式为<（类别:docID）,word1 word2...>
+	 * 输出:原本的文档分类，即<类别,docID>
 	 */
-	public static class RightDocClassMap extends Mapper<Text, Text, Text, Text>{
-		private Text newKey = new Text();
-		private Text newValue = new Text();
-		public void map(Text key, Text value, Context context) throws IOException, InterruptedException{			
-			int index = key.toString().indexOf(":");
-			newKey.set(key.toString().substring(0, index));
-			newValue.set(key.toString().substring(index+1, key.toString().length()));
-			context.write(newKey, newValue);
-			//System.out.println(newKey + "\t" + newValue);
-		}
-	}
+	public static class OriginalClassMap extends Mapper<Text, Text, Text, Text> {
+        private Text newKey = new Text();
+        private Text newValue = new Text();
+
+        public void map(Text key, Text value, Context context) throws IOException, InterruptedException {
+            int index = key.toString().indexOf(":");
+            newKey.set(key.toString().substring(0, index));
+            newValue.set(key.toString().substring(index + 1, key.toString().length()));
+            context.write(newKey, newValue);
+            System.out.println(newKey + "\t" + newValue);
+        }
+    }
 	
 	/**
 	 * 得到经贝叶斯分分类器分类后的文档分类
-	 * 读取经贝叶斯分类器分类后的结果文档<Doc,ClassName>,并将其转化为<ClassName,Doc>形式
+	 * 读取经贝叶斯分类器分类后的结果文档<docID,类别>,并将其转化为<类别,docID>的形式
 	 */
-	public static class ClassifiedDocOfClassMap extends Mapper<Text, Text, Text, Text>{		
+	public static class ClassifiedClassMap extends Mapper<Text, Text, Text, Text>{
 		public void map(Text key, Text value, Context context) throws IOException, InterruptedException{		
 			context.write(value, key);
-			//System.out.println(value + "\t" + key);
+//			System.out.println(value + "\t" + key);
 		}
 	}
-	
+	/*输入<类别，docID>，输出<类别，docID1 docID2 docID3...>*/
 	public static class Reduce extends Reducer<Text, Text, Text, Text>{
 		private Text result = new Text();		
-		public void reduce(Text key, Iterable<Text>values, Context context) throws IOException, InterruptedException{
-			//生成文档列表
+		public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException{
+		    //生成文档列表
 			String fileList = new String();
 			for(Text value:values){
-				fileList += value.toString() + ";";
+				fileList += value.toString() + ":";
 			}
 			result.set(fileList);
 			context.write(key, result);
-			//System.out.println(key + "\t" + result);
+			System.out.println(key + "\t" + result);
 		}
 	}
-	
+
+	//因为后面评估分类效果时每次需要同时处理相同类别下的测试集里的文档情况和经贝叶斯分类后的文档情况，这里先用
+    //HashMap处理一下经贝叶斯分类后的结果，方便后面处理。
+    private static HashMap<String, String> ClassifiedClassMap = new HashMap<String, String>();
+	public static HashMap <String, String> ClassifiedResultsManage(Configuration conf, String ClassifiedClassPath) throws IOException{
+		FileSystem fs = FileSystem.get(URI.create(ClassifiedClassPath), conf);
+		Path path = new Path(ClassifiedClassPath);
+		SequenceFile.Reader reader = null;
+		try{
+			reader = new SequenceFile.Reader(fs, path, conf);
+			Text key = (Text)ReflectionUtils.newInstance(reader.getKeyClass(), conf);
+			Text value = (Text)ReflectionUtils.newInstance(reader.getValueClass(), conf);
+			while (reader.next(key,value)){
+				ClassifiedClassMap.put(key.toString(), value.toString());
+			}
+		}finally{
+			IOUtils.closeStream(reader);
+		}
+//		System.out.println(ClassifiedClassMap);
+		return ClassifiedClassMap;
+    }
+
 	/**
-	 * 第一个MapReduce计算得出初始情况下各个类有哪些文档,第二个MapReduce计算得出经贝叶斯分类后各个类有哪些文档
-	 * 此函数作用就是统计初始情况下的分类和贝叶斯分类两种情况下各个类公有的文档数目(即针对各个类分类正确的文档数目TP)
-	 * 初始情况下的各个类总数目减去分类正确的数目即为原本正确但分类错误的数目(FN = OriginalCounts-TP)
+	 * 第一个MapReduce计算得出测试集中各个类有哪些文档,第二个MapReduce计算得出经贝叶斯分类后各个类有哪些文档
+	 * 此函数作用就是统计测试集实际分类和贝叶斯预测分类两种情况下各个类公有的文档数目(即针对各个类分类正确的文档数目TP)
+	 * 测试集中各个类总数目减去分类正确的数目即为原本正确但分类错误的数目(FN = OriginalCounts-TP)
 	 * 贝叶斯分类得到的各个类的总数目减去分类正确的数目即为原本不属于该类但分到该类的数目(FP = ClassifiedCounts - TP)
 	 */
 	//Precision精度:P = TP/(TP+FP)
@@ -153,43 +179,32 @@ public class Evaluation {
 	//针对所有类别:  
 	//Macroaveraged precision:(p1+p2+...+pN)/N
 	//Microaveraged precision:对应各项相加再计算总的P、R值	
-	public static void GetEvaluation(Configuration conf, String ClassifiedDocOfClassFilePath, String OriginalDocOfClassFilePath) throws IOException{
-		FileSystem fs1 = FileSystem.get(URI.create(ClassifiedDocOfClassFilePath), conf);
-		Path path1 = new Path(ClassifiedDocOfClassFilePath);
-		SequenceFile.Reader reader1 = null;
-		
-		FileSystem fs2 = FileSystem.get(URI.create(OriginalDocOfClassFilePath), conf);
-		Path path2 = new Path(OriginalDocOfClassFilePath);
-		SequenceFile.Reader reader2 = null;
+	public static void GetEvaluation(Configuration conf, String OriginalClassPath) throws IOException{
+		FileSystem fs = FileSystem.get(URI.create(OriginalClassPath), conf);
+		Path path = new Path(OriginalClassPath);
+		SequenceFile.Reader reader = null;
 		try{
-			reader1 = new SequenceFile.Reader(fs1, path1, conf);//创建Reader对象			
-			Text key1 = (Text)ReflectionUtils.newInstance(reader1.getKeyClass(), conf);
-			Text value1 = (Text)ReflectionUtils.newInstance(reader1.getValueClass(), conf);
+			reader = new SequenceFile.Reader(fs, path, conf);
+			Text key = (Text)ReflectionUtils.newInstance(reader.getKeyClass(), conf);
+			Text value = (Text)ReflectionUtils.newInstance(reader.getValueClass(), conf);
 			
-			reader2 = new SequenceFile.Reader(fs2, path2, conf);
-			Text key2 = (Text)ReflectionUtils.newInstance(reader2.getKeyClass(), conf);
-			Text value2 = (Text)ReflectionUtils.newInstance(reader2.getValueClass(), conf);
-			
-			//ArrayList<String> OriginalClassNames = new ArrayList<String>();     //依次得到分类的类名
-			//ArrayList<String> ClassifiedClassNames = new ArrayList<String>();    			
-			//ArrayList<Integer> OriginalClassLength = new ArrayList<Integer>();  //记录ClassNames中对应的类，真实情况下对应的文档个数
-			//ArrayList<Integer> ClassifiedClassLength = new ArrayList<Integer>();//记录ClassNames中对应的类，经贝叶斯分类后文档的个数
 			ArrayList<String> ClassNames = new ArrayList<String>();     //依次得到分类的类名
 			ArrayList<Integer> TruePositive = new ArrayList<Integer>(); //记录真实情况和经分类后，正确分类的文档数目
 			ArrayList<Integer> FalseNegative = new ArrayList<Integer>();//记录属于该类但是没有分到该类的数目
 			ArrayList<Integer> FalsePositive = new ArrayList<Integer>();//记录不属于该类但是被分到该类的数目
 			
 		
-			while((reader1.next(key1, value1))&&(reader2.next(key2, value2))){	
+			while(reader.next(key, value)){
 				//System.out.println(key1 + "\t" + key2);	//可以看到key1==key2,也就是说读入时分类前和分类后都是按相同的顺序排序的
 				//=>后面可以逐条记录处理(因为每次读入的分类前后的类是相同的)
 			
-				ClassNames.add(key1.toString());
+				ClassNames.add(key.toString());
 				//ClassifiedClassNames.add(key1.toString());
 				//OriginalClassNames.add(key2.toString());
 				
-				String[] values1 = value1.toString().split(";");
-				String[] values2 = value2.toString().split(";");
+				String[] values1 = ClassifiedClassMap.get(key.toString()).split(":");//预测分类结果
+				System.out.println(values1);
+				String[] values2 = value.toString().split(":");//测试集情况
 											
 				//System.out.println(key1.toString() + "---" + values1.length + "\t" + key2.toString() + "---" + values2.length);
 				
@@ -212,7 +227,7 @@ public class Evaluation {
 				double rr = TP*1.0/values2.length;
 				double ff = 2*pp*rr/(pp+rr);
 				
-				System.out.println(key1.toString() + ":" + key2.toString() + "\t" + values1.length + "\t" + values2.length + 
+				System.out.println(key.toString() + ":" + key.toString() + "\t" + values1.length + "\t" + values2.length +
 						"\t" + TP + "\t" + (values1.length-TP) + "\t" + (values2.length-TP) + "\tp=" + pp + ";\tr=" + rr + ";\tf1=" + ff);
 						
 			}
@@ -255,8 +270,8 @@ public class Evaluation {
 			System.out.println("MicroAverage precision : P= " + p2 + ";\tR=" + r2 + ";\tF1=" + f2);
 			
 		}finally{
-			reader1.close();
-			reader2.close();
+//			reader1.close();
+			reader.close();
 		}		
 	}
 	

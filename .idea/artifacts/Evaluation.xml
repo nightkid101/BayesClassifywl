@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Evaluation">
+    <output-path>$USER_HOME$/</output-path>
+    <root id="archive" name="Evaluation.jar">
+      <element id="file-copy" path="$USER_HOME$/Evaluation$ClassifiedDocOfClassMap.class" />
+      <element id="file-copy" path="$USER_HOME$/Evaluation$OriginalClassMap.class" />
+      <element id="file-copy" path="$USER_HOME$/Evaluation$Reduce.class" />
+      <element id="file-copy" path="$USER_HOME$/Evaluation.class" />
+    </root>
+  </artifact>
+</component>

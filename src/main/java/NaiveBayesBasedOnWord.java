@@ -22,8 +22,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.mapreduce.lib.output.SequenceFileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 import org.apache.hadoop.util.ReflectionUtils;
-import org.apache.hadoop.yarn.security.DockerCredentialTokenIdentifier;
-
 
  	/*贝叶斯文档分类器的多项式模型–以单词为粒度
  	条件概率P(tk|c)=(类c下单词tk在各个文档中出现过的次数之和+1)/（类c下单词总数+训练样本中不重复的单词总数）
@@ -277,7 +275,6 @@ public class NaiveBayesBasedOnWord {
 	 * 输出:得到HashMap<String,Double>,即<（类名:单词）,条件概率>
 	 */
     private static HashMap<String, Double> wordsProbability = new HashMap<String, Double>();//用来存储单词条件概率
-
 	public static HashMap<String, Double> GetConditionProbability() throws IOException{
 		Configuration conf = new Configuration();
 
