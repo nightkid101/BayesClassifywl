@@ -11,11 +11,10 @@ import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 
 //FileSerializer:
-//将训练集和测试集中的文件序列化为<（类别：docID）,word1 tab word2 tab word3 tab word4......>的形式
-
+//将训练集和测试集中的文件序列化为<（类别：docID）,word1 word2 word3 word4...>的形式
 public class FileSerializer {
-//*args[0]输入文件夹路径;eg:hdfs:///Data/training
-//*args[1]输出文件夹路径;eg:hdfs://seqtraining
+//*args[0]输入文件夹路径;hdfs:///Data/training(hdfs:///Data/test)
+//*args[1]输出文件夹路径;hdfs://seqtraining(hdfs://seqtest)
 //*将一个文件夹（训练集/测试集）下的所有文件序列化；
     public static void main(String[] args) throws  IOException{
         String inputuri = args[0];//hdfs上训练集(/测试集)输入路径
@@ -39,8 +38,6 @@ public class FileSerializer {
                 for(FileStatus file:files) {
                     key.set(dir.getPath().getName() + ':' + file.getPath().getName());//key是（类名:docID）
                     value.set(file2string(file));
-                    System.out.println(key);
-                    System.out.println(value);
                     writer.append(key,value);
                 }
             }

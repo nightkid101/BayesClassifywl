@@ -2,39 +2,45 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Evaluation" />
+      <artifact name="BayesClassifywl:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f30384c-21ab-4910-9dde-e10bb9eee099" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Evaluation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/FileSerializer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/NaiveBayesBasedOnWord2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Evaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Evaluation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation$ClassifiedDocOfClassMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FileSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NaiveBayes2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NaiveBayes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation$ClassifiedClassMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation$ClassifiedClassMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation$OriginalClassMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation$OriginalClassMap.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Evaluation$Reduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation$Reduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation$RightDocClassMap.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Evaluation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassTotalWordsMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassTotalWordsMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassTotalWordsReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassTotalWordsReduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassWordsCountMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassWordsCountMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassWordsCountReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassWordsCountReduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassifyMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassifyMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassifyReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassifyReduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$DiffTotalWordsMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$DiffTotalWordsMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$DiffTotalWordsReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$DiffTotalWordsReduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalDocsMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalDocsMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalDocsReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalDocsReduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalWordsMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalWordsMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalWordsReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalWordsReduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassWordsCountMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassWordsCountMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassWordsCountReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassWordsCountReduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassifyMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassifyMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassifyReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassifyReduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$DiffTotalWordsMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$DiffTotalWordsMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$DiffTotalWordsReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$DiffTotalWordsReduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/FileSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FileSerializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassTotalWordsMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassTotalWordsReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassWordsCountMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassWordsCountReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassifyMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassifyReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$DiffTotalWordsMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$DiffTotalWordsReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalDocsMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalDocsReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalWordsMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalWordsReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassWordsCountMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassWordsCountReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassifyMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassifyReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$DiffTotalWordsMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$DiffTotalWordsReduce.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,44 +57,51 @@
     <session id="364901704">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="19" />
+          <entry key="project.closed" value="27" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.18" value="2" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="6392" />
+          <entry key="dummy" value="1" />
+          <entry key="java" value="8371" />
           <entry key="xml" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="6392" />
+          <entry key="JAVA" value="8371" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="XML" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="MF" value="1" />
           <entry key="class" value="5" />
           <entry key="iml" value="2" />
-          <entry key="java" value="6" />
-          <entry key="xml" value="7" />
+          <entry key="java" value="10" />
+          <entry key="xml" value="8" />
           <entry key="xml " value="1" />
         </counts>
       </usages-collector>
@@ -96,9 +109,10 @@
         <counts>
           <entry key="CLASS" value="5" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="10" />
+          <entry key="Manifest" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="7" />
+          <entry key="XML" value="8" />
         </counts>
       </usages-collector>
     </session>
@@ -108,32 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/FileSerializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4807">
-              <caret line="276" column="104" selection-start-line="276" selection-start-column="104" selection-end-line="276" selection-end-column="104" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1609">
-              <caret line="355" column="9" lean-forward="true" selection-start-line="353" selection-start-column="9" selection-end-line="355" selection-end-column="9" />
+            <state relative-caret-position="475">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,13 +132,57 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Prediction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1268">
-              <caret line="273" column="18" lean-forward="true" selection-start-line="273" selection-start-column="18" selection-end-line="273" selection-end-column="18" />
+            <state relative-caret-position="689">
+              <caret line="204" column="26" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5270#5286#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Prediction2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2779">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/NaiveBayes.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4693">
+              <caret line="264" column="1" selection-start-line="264" selection-start-column="1" selection-end-line="264" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4161">
+              <caret line="239" selection-start-line="239" selection-end-line="239" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,10 +206,16 @@
         <option value="$PROJECT_DIR$/src/main/resources/hdfs-site.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Bayes_classifier.java" />
-        <option value="$PROJECT_DIR$/src/main/java/FileSerializer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java" />
         <option value="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NaiveBayes2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prediction1.java" />
+        <option value="$PROJECT_DIR$/src/main/java/FileSerializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WordCount.java" />
+        <option value="$PROJECT_DIR$/src/main/java/NaiveBayes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prediction2.java" />
         <option value="$PROJECT_DIR$/src/main/java/Evaluation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Prediction.java" />
       </list>
     </option>
   </component>
@@ -197,16 +237,46 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="28" />
-    <option name="width" value="1849" />
-    <option name="height" value="865" />
+    <option name="x" value="69" />
+    <option name="y" value="50" />
+    <option name="width" value="1847" />
+    <option name="height" value="857" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Android</id>
+          </State>
+          <State>
+            <id>CorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>PerformanceLintAndroid</id>
+          </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -219,6 +289,24 @@
               <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
               <item name="BayesClassifywl" type="462c0819:PsiDirectoryNode" />
               <item name="Data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BayesClassifywl" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BayesClassifywl" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BayesClassifywl" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
+              <item name="BayesClassifywl_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
@@ -242,20 +330,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544082179588" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Evaluation.class" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544451413341" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.1568779" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -278,11 +366,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Evaluation">
+  <component name="RunManager" selected="Application.Prediction2">
     <configuration name="Evaluation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Evaluation" />
       <module name="BayesClassifywl" />
-      <option name="PROGRAM_PARAMETERS" value="hdfs:///seqtest hdfs:///eva1 hdfs:///res5 hdfs:///eva3" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs:///seqtest hdfs:///eva1 hdfs:///resPrediction hdfs:///eva3" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -290,29 +378,49 @@
     <configuration name="FileSerializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FileSerializer" />
       <module name="BayesClassifywl" />
-      <option name="PROGRAM_PARAMETERS" value="$PROJECT_DIR$/Data/training hdfs:///Data/seqtraining" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs:///Data/test hdfs:///seqtest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NaiveBayesBasedOnWord2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="NaiveBayesBasedOnWord2" />
+    <configuration name="NaiveBayes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NaiveBayes" />
       <module name="BayesClassifywl" />
-      <option name="PROGRAM_PARAMETERS" value="hdfs:///seqtraining hdfs:///res1 hdfs:///res2 hdfs:///res3 hdfs:///seqtest hdfs:///res5 hdfs:///res6" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs:///seqtraining hdfs:///resjob1 hdfs:///resjob2 hdfs:///resjob3 hdfs:///resjob0" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Prediction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Prediction" />
+      <module name="BayesClassifywl" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs:///resjob0 hdfs:///resjob1 hdfs:///resjob2 hdfs:///resjob3 hdfs:///seqtest hdfs:///resPrediction" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Prediction2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Prediction2" />
+      <module name="BayesClassifywl" />
+      <option name="PROGRAM_PARAMETERS" value="hdfs:///resjob1 hdfs:///resjob2 hdfs:///resjob3 hdfs:///seqtest hdfs:///resPrediction2" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.FileSerializer" />
-      <item itemvalue="Application.NaiveBayesBasedOnWord2" />
+      <item itemvalue="Application.NaiveBayes" />
       <item itemvalue="Application.Evaluation" />
+      <item itemvalue="Application.Prediction" />
+      <item itemvalue="Application.Prediction2" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Evaluation" />
-        <item itemvalue="Application.NaiveBayesBasedOnWord2" />
+        <item itemvalue="Application.Prediction2" />
+        <item itemvalue="Application.Prediction" />
         <item itemvalue="Application.FileSerializer" />
+        <item itemvalue="Application.Evaluation" />
+        <item itemvalue="Application.NaiveBayes" />
       </list>
     </recent_temporary>
   </component>
@@ -345,11 +453,20 @@
       <workItem from="1543889308303" duration="2395000" />
       <workItem from="1544058050926" duration="10065000" />
       <workItem from="1544079871120" duration="2360000" />
+      <workItem from="1544093531851" duration="590000" />
+      <workItem from="1544321814830" duration="7358000" />
+      <workItem from="1544335405815" duration="13966000" />
+      <workItem from="1544367595635" duration="4174000" />
+      <workItem from="1544407576903" duration="3853000" />
+      <workItem from="1544431270809" duration="1930000" />
+      <workItem from="1544433670054" duration="10815000" />
+      <workItem from="1544447226609" duration="3361000" />
+      <workItem from="1544490741756" duration="993000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83373000" />
+    <option name="totallyTimeSpent" value="130413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -363,17 +480,16 @@
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1853" height="919" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09418283" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14570637" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.10217114" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.17113665" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3320562" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5108557" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.27969348" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3299363" />
@@ -382,7 +498,7 @@
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3299363" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.3128991" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.13282248" />
       <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.16433121" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -392,8 +508,9 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.10027701" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.10027701" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32963988" />
+      <window_info anchor="right" id="Structure" order="10" visible="true" weight="0.07590028" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,34 +523,42 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java</url>
-          <line>333</line>
-          <properties />
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java</url>
-          <line>366</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Evaluation.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Evaluation.java</url>
-          <line>92</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java</url>
-          <line>32</line>
+          <url>file://$PROJECT_DIR$/src/main/java/NaiveBayes.java</url>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Prediction.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Prediction.java</url>
+          <line>169</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Prediction2.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Prediction.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/Evaluation.java</url>
+          <line>176</line>
+          <properties class="Evaluation" method="Calculate">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -460,37 +585,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Bayes_classifier.java" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/hadoop/hadoop-mapreduce-client-core/3.1.1/hadoop-mapreduce-client-core-3.1.1.jar!/org/apache/hadoop/mapreduce/Reducer.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FileSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="48" column="40" selection-start-line="48" selection-start-column="40" selection-end-line="48" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4807">
-          <caret line="276" column="104" selection-start-line="276" selection-start-column="104" selection-end-line="276" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -505,16 +603,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1938">
           <caret line="135" selection-start-line="135" selection-end-line="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NaiveBayes2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1943">
+          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
           <folding>
-            <element signature="e#3964#3965#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WordCount2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1609">
-          <caret line="355" column="9" lean-forward="true" selection-start-line="353" selection-start-column="9" selection-end-line="355" selection-end-column="9" />
+        <state relative-caret-position="-133">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1170#1178#0" expanded="true" />
+            <element signature="e#4625#4633#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FileSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/NaiveBayes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4693">
+          <caret line="264" column="1" selection-start-line="264" selection-start-column="1" selection-end-line="264" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -523,11 +660,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Evaluation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1268">
-          <caret line="273" column="18" lean-forward="true" selection-start-line="273" selection-start-column="18" selection-end-line="273" selection-end-column="18" />
+        <state relative-caret-position="4161">
+          <caret line="239" selection-start-line="239" selection-end-line="239" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5270#5286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prediction2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2779">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prediction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="689">
+          <caret line="204" column="26" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -538,7 +694,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>Evaluation</last-edited>
+          <last-edited>BayesClassifywl:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
