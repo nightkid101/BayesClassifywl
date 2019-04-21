@@ -7,40 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f30384c-21ab-4910-9dde-e10bb9eee099" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Evaluation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/FileSerializer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/NaiveBayesBasedOnWord2.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Evaluation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Evaluation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NaiveBayes2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/NaiveBayesBasedOnWord2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/NaiveBayes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation$ClassifiedClassMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation$ClassifiedClassMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation$OriginalClassMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation$OriginalClassMap.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation$Reduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation$Reduce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Evaluation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Evaluation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FileSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/FileSerializer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassTotalWordsMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassTotalWordsReduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassWordsCountMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassWordsCountReduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassifyMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$ClassifyReduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$DiffTotalWordsMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord$DiffTotalWordsReduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalDocsMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalDocsReduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalWordsMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassTotalWordsReduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassWordsCountMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassWordsCountReduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassifyMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$ClassifyReduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$DiffTotalWordsMap.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2$DiffTotalWordsReduce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/NaiveBayesBasedOnWord2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Prediction$ClassifyReduce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Prediction$ClassifyReduce.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -57,14 +25,14 @@
     <session id="364901704">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="27" />
+          <entry key="project.closed" value="29" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="3" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="2" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="1" />
@@ -75,10 +43,11 @@
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="28" />
+          <entry key="project.opened" value="30" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -134,7 +103,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prediction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="689">
+            <state relative-caret-position="569">
               <caret line="204" column="26" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -155,7 +124,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Prediction2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2779">
+            <state relative-caret-position="361">
               <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -276,37 +245,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
               <item name="BayesClassifywl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BayesClassifywl" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BayesClassifywl" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BayesClassifywl" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BayesClassifywl" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="BayesClassifywl_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BayesClassifywl" type="b2602c69:ProjectViewProjectNode" />
@@ -462,11 +408,13 @@
       <workItem from="1544433670054" duration="10815000" />
       <workItem from="1544447226609" duration="3361000" />
       <workItem from="1544490741756" duration="993000" />
+      <workItem from="1546000834412" duration="633000" />
+      <workItem from="1552130856299" duration="42000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130413000" />
+    <option name="totallyTimeSpent" value="131088000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -478,9 +426,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1853" height="919" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14570637" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14870094" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -510,7 +458,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.10027701" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32963988" />
-      <window_info anchor="right" id="Structure" order="10" visible="true" weight="0.07590028" />
+      <window_info anchor="right" id="Structure" order="10" visible="true" weight="0.07573245" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -648,6 +596,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Prediction2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/NaiveBayes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4693">
@@ -668,19 +626,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Prediction2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2779">
-          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Prediction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="689">
+        <state relative-caret-position="569">
           <caret line="204" column="26" selection-start-line="204" selection-start-column="26" selection-end-line="204" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
